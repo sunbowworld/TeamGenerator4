@@ -44,8 +44,17 @@ gem 'jquery-rails'
 gem 'execjs'
 gem 'therubyracer'
 
+# localhost以外からもエラー時にコンソールが打てる
+# rails s TRUSTED_IP=xxx.xxx.xxx.xxx
 group :development do
   gem "better_errors"
 end
 
+# 論理削除に置き換え
 gem 'rails3_acts_as_paranoid'
+
+# steamのgemに必要
+gem "bzip2-ruby", "~> 0.2.7"
+
+# steamのgemらしい?
+gem 'steam-condenser'
