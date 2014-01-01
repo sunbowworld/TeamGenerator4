@@ -62,3 +62,6 @@ gem 'rails4_acts_as_paranoid'
 
 # steamのgemらしい?
 gem 'steam-condenser', '>=1.3.8'
+
+# mumble用ice
+gem "ice", "~>0.5.1" 
