@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tg4</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Tg4</title>
+	  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<center>
+			<div id="global_header">
+				<div class="content">
+					<div class="logo">
+						<span id="logo_holder">
+							<a href="http://store.steampowered.com/">TeamGenerator4</a>
+						</span>
+					</div>
 
-<%= yield %>
-
-</body>
+					<div style="position: absolute; left: 200px;" id="supernav">
+						<%= link_to "ユーザ一覧", :steam_users, {:class => "menuitem supernav"} %>
+						<%= link_to "チーム一覧", :teams, {:class => "menuitem supernav"} %>
+						<%= link_to "対戦結果一覧", :versus_informations, {:class => "menuitem supernav"} %>
+					</div>
+				</div>
+			</div>
+			<div id="BG_bottom">
+				<div id="bodyContents">
+					<%= yield %>
+				</div>
+			</div>
+		</center>
+	</body>
 </html>
