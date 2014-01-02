@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  versus_information_id: 1
+  team_id: 1
+  score: 1
+
+two:
+  versus_information_id: 1
+  team_id: 1
+  score: 1

@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  versus_at: 2014-01-02 21:41:53
+
+two:
+  versus_at: 2014-01-02 21:41:53

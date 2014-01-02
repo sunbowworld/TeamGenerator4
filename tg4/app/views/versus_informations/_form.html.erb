@@ -1,0 +1,21 @@
+<%= form_for(@versus_information) do |f| %>
+  <% if @versus_information.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@versus_information.errors.count, "error") %> prohibited this versus_information from being saved:</h2>
+
+      <ul>
+      <% @versus_information.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :versus_at %><br>
+    <%= f.datetime_select :versus_at %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
