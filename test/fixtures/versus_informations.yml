@@ -1,7 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  versus_at: 2014-01-02 21:41:53
+  versus_at: 2014-01-04 02:02:56
+  team1_id: 
+  team1_score: 
+  team2_id: 
+  team2_score: 
 
 two:
-  versus_at: 2014-01-02 21:41:53
+  versus_at: 2014-01-04 02:02:56
+  team1_id: 
+  team1_score: 
+  team2_id: 
+  team2_score: 

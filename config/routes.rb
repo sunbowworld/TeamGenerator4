@@ -1,14 +1,4 @@
 Tg4::Application.routes.draw do
-  resources :teams_versus_informations
-
-  resources :steam_users_teams
-
-  resources :versus_informations
-
-  resources :teams
-
-  resources :steam_users
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
