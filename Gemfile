@@ -64,4 +64,7 @@ gem 'rails4_acts_as_paranoid'
 gem 'steam-condenser', '>=1.3.8'
 
 # mumble用ice
-gem "ice", "~>0.5.1" 
+gem "ice", "~>0.5.1"
+
+# テンプレートエンジンを haml に変更
+gem 'haml-rails'
