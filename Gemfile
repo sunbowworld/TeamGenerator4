@@ -60,8 +60,8 @@ end
 # 論理削除に置き換え
 gem 'rails4_acts_as_paranoid'
 
-# steamのgemらしい?
-gem 'steam-condenser', '>=1.3.8'
+# steam
+gem 'steam-condenser', '1.3.8.1'
 
 # mumble用ice
 gem "ice", "~>0.5.1"

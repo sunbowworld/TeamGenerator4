@@ -14,8 +14,10 @@
 ActiveRecord::Schema.define(version: 20140103171017) do
 
   create_table "steam_users", force: true do |t|
-    t.string "steam_id_64"
+    t.string "steam_id64"
   end
+
+  add_index "steam_users", ["steam_id64"], name: "index_steam_users_on_steam_id64", unique: true
 
   create_table "steam_users_teams", force: true do |t|
     t.integer "steam_user_id"
