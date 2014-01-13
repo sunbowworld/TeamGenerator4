@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140103171017) do
+ActiveRecord::Schema.define(version: 20140113153646) do
 
   create_table "steam_users", force: true do |t|
     t.string "steam_id64"
@@ -28,12 +28,14 @@ ActiveRecord::Schema.define(version: 20140103171017) do
     t.string "team_name"
   end
 
+  create_table "teams_versus_informations", force: true do |t|
+    t.integer "team_id"
+    t.integer "versus_information_id"
+    t.integer "score"
+  end
+
   create_table "versus_informations", force: true do |t|
     t.datetime "versus_at"
-    t.integer  "team1_id"
-    t.integer  "team1_score"
-    t.integer  "team2_id"
-    t.integer  "team2_score"
   end
 
 end
